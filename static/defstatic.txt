@@ -1,0 +1,1 @@
+As you may see, this is a white txt for the static folder
