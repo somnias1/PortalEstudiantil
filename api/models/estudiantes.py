@@ -6,7 +6,7 @@ from django.contrib.auth.models import AbstractUser
 class Estudiante(AbstractUser):
     cedula = models.IntegerField('Cédula del estudiante', unique=True)
     USERNAME_FIELD = 'cedula'
-    username = None
+    REQUIRED_FIELDS = ['username']
     nombre_1 = models.CharField('Primer nombre', max_length=128, blank=True, null= True)
     nombre_2 = models.CharField('Primer nombre', max_length=128, blank=True, null= True)
     Apellido_1 = models.CharField('Primer nombre', max_length=128, blank=True, null= True)
