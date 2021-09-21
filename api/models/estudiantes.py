@@ -20,4 +20,4 @@ class Estudiante(AbstractUser):
         verbose_name_plural = "Estudiantes"
 
     def __str__(self):
-        return f"{self.cedula} - {self.nombre_1} - {self.apellido_1}"
+        return f"{self.cedula} - {self.first_name} - {self.last_name}"
