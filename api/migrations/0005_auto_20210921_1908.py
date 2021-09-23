@@ -6,39 +6,43 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0004_estudiante_username'),
+        ("api", "0004_estudiante_username"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='estudiante',
-            name='Apellido_1',
+            model_name="estudiante",
+            name="Apellido_1",
         ),
         migrations.RemoveField(
-            model_name='estudiante',
-            name='apellido_2',
+            model_name="estudiante",
+            name="apellido_2",
         ),
         migrations.RemoveField(
-            model_name='estudiante',
-            name='nombre_1',
+            model_name="estudiante",
+            name="nombre_1",
         ),
         migrations.RemoveField(
-            model_name='estudiante',
-            name='nombre_2',
+            model_name="estudiante",
+            name="nombre_2",
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='email',
+            model_name="estudiante",
+            name="email",
             field=models.EmailField(blank=True, max_length=254, null=True),
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='first_name',
-            field=models.CharField(blank=True, max_length=128, null=True, verbose_name='Primer nombre'),
+            model_name="estudiante",
+            name="first_name",
+            field=models.CharField(
+                blank=True, max_length=128, null=True, verbose_name="Primer nombre"
+            ),
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='last_name',
-            field=models.CharField(blank=True, max_length=128, null=True, verbose_name='Primer nombre'),
+            model_name="estudiante",
+            name="last_name",
+            field=models.CharField(
+                blank=True, max_length=128, null=True, verbose_name="Primer nombre"
+            ),
         ),
     ]

@@ -6,12 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0002_auto_20210921_1812'),
+        ("api", "0002_auto_20210921_1812"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='estudiante',
-            name='username',
+            model_name="estudiante",
+            name="username",
         ),
     ]

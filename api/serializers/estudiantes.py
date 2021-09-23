@@ -1,8 +1,8 @@
 from rest_framework import serializers
 from ..models import Estudiante
 
+
 class EstudianteSerializer(serializers.ModelSerializer):
-    
     class Meta:
         model = Estudiante
         fields = ["cedula", "first_name", "last_name", "email", "is_active"]
@@ -17,7 +17,6 @@ class EstudianteSerializer(serializers.ModelSerializer):
     def remove_estudiantes(self, id):
         estudiante = Estudiante.objects.filter(id=id).update(is_active=False)
         return estudiante
-
 
     def update_estudiantes(self, id, validate_data):
         estudiante = Estudiante.objects.filter(id=id).update(**validate_data)

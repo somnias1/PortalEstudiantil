@@ -6,38 +6,56 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0001_initial'),
+        ("api", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='estudiante',
-            name='Apellido_1',
-            field=models.CharField(blank=True, max_length=128, null=True, verbose_name='Primer nombre'),
+            model_name="estudiante",
+            name="Apellido_1",
+            field=models.CharField(
+                blank=True, max_length=128, null=True, verbose_name="Primer nombre"
+            ),
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='apellido_2',
-            field=models.CharField(blank=True, max_length=128, null=True, verbose_name='Primer nombre'),
+            model_name="estudiante",
+            name="apellido_2",
+            field=models.CharField(
+                blank=True, max_length=128, null=True, verbose_name="Primer nombre"
+            ),
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='fecha_nacimiento',
-            field=models.DateField(blank=True, help_text='YYYY-MM--DD', null=True, verbose_name='Fecha de nacimiento'),
+            model_name="estudiante",
+            name="fecha_nacimiento",
+            field=models.DateField(
+                blank=True,
+                help_text="YYYY-MM--DD",
+                null=True,
+                verbose_name="Fecha de nacimiento",
+            ),
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='nombre_1',
-            field=models.CharField(blank=True, max_length=128, null=True, verbose_name='Primer nombre'),
+            model_name="estudiante",
+            name="nombre_1",
+            field=models.CharField(
+                blank=True, max_length=128, null=True, verbose_name="Primer nombre"
+            ),
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='nombre_2',
-            field=models.CharField(blank=True, max_length=128, null=True, verbose_name='Primer nombre'),
+            model_name="estudiante",
+            name="nombre_2",
+            field=models.CharField(
+                blank=True, max_length=128, null=True, verbose_name="Primer nombre"
+            ),
         ),
         migrations.AlterField(
-            model_name='estudiante',
-            name='residencia',
-            field=models.CharField(blank=True, max_length=255, null=True, verbose_name='Dirección de residencia'),
+            model_name="estudiante",
+            name="residencia",
+            field=models.CharField(
+                blank=True,
+                max_length=255,
+                null=True,
+                verbose_name="Dirección de residencia",
+            ),
         ),
     ]
