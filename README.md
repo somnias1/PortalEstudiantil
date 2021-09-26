@@ -8,7 +8,7 @@ Onboarding
 - [X] Trello Camban
 - [X] Heroku
 - [X] Posgress
-- [ ] Django y Django restframework
-- [ ] Usuario django
+- [X] Django y Django restframework
+- [X] Usuario django
 - [ ] Diagramado (https://app.diagrams.net/)
 - [ ] Pipelines to heroku
