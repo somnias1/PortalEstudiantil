@@ -1,1 +1,1 @@
-from .estudiantes import EstudianteSerializer
+from .users import UsuarioSerializer

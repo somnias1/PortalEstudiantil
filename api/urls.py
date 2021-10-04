@@ -1,5 +1,5 @@
 from django.urls import include, path
-from .views import EstudianteApi
+from .views import UsuarioRegistroApi
 
 
-urlpatterns = [path("estudiantes", EstudianteApi.as_view())]
+urlpatterns = [path("usuarios/registro", UsuarioRegistroApi.as_view())]
