@@ -1,1 +1,1 @@
-from .estudiantes import EstudianteApi
+from .users import UsuarioRegistroApi
